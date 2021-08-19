@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="jquery3.5.js"></script>
+     </script>
+    <style>
+    .divstyle
+        {
+        height:100px;
+        width:100px;
+        background-color:limegreen;
+        }
+        </style>
+    <script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("div").delay("slow").removeClass("divstyle");
+           });
+    });
+    </script>
+</head>
+<body>
+   <button>dynamicCSS</button>
+   <div class="divstyle">DIVISION</div>
+    
+</body>
+</html>

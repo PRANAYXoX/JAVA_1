@@ -1,0 +1,194 @@
+body,h1 {font-family: "Montserrat", sans-serif};
+img {margin-bottom: -7px}
+.w3-row-padding img {margin-bottom: 12px}
+
+.main-heading
+{
+     font-size: 45px; 
+      font-family: 'Bungee';
+      margin: 1rem;
+      color: limegreen;
+      text-shadow:  4px 5px  green;
+      position:relative;
+      padding: 1rem 2rem;
+      border: 4px solid limegreen;
+      border-radius: 30px;
+      transition: all 0.3s ease-out;
+    }
+a{
+  transition: all 0.3s ease-in;
+}
+ .main-heading:hover
+ {   
+    background: black;
+    color: greenyellow;
+    border-radius: 100px;
+    box-shadow:  0 0 35px lawngreen, 
+    0 0 60px lawngreen, 
+    0 0 110px lawngreen ;
+  }
+
+ body {
+  background-color: #e3f9c3;
+}
+.iframe-container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; 
+    height: 0;
+    margin-bottom: 1rem;
+  }
+  .iframe-container iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+  }
+
+  .cards
+  {
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    padding: 20px;
+    grid-gap: 40px;
+
+  }
+
+  .card
+  {
+    color: #e3f9c3;
+    transition: all 0.3s ease-in-out;
+    background-color: darkolivegreen;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgb(0, 0, 0.18);
+    cursor: pointer;
+
+  }
+
+  .card:hover {
+  transform: scale(1.1);
+  color: rgb(51, 114, 0);
+  background-color: lawngreen;
+    box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.233);
+  }
+
+
+
+  img{
+    width: 100%;
+    display: block;
+    border-radius: 20px 20px 0 0;
+
+  }
+
+  .container
+  {
+    position: relative;
+    clip-path: polygon(0 0,100% 0 , 100% 85%, 0 100%);
+
+  }
+
+  .card1>.container:after
+  {
+background-image: linear-gradient(
+135deg,
+  rgb(162, 240, 162), );
+
+  }
+
+
+.details
+{
+
+  padding: 20px 30px;
+
+}
+
+.details>h3{
+  color: black;
+  font-weight: 600;
+  font-size: 20px;
+  margin: 10px 0 15px 0;
+
+}
+
+.details>p
+{
+  color: inherit;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.w3-bar-block w3-center a:hover {
+	font-weight: bolder;
+}
+
+
+
+.dropdown {
+	float: center;
+	overflow: hidden;
+}
+.dropdown .drop {
+	font-size: 17px; 
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 20px 20px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+.drop .fa-angle-double-up,
+.drop:hover .fa-angle-double-down {
+	display: none;
+}
+.drop:hover .fa-angle-double-up {
+	display: inline;
+}
+.drop-content {
+	display: none;
+	position: absolute;
+	background-color: #404040;
+	min-width: 150px;
+  z-index: 1;
+  width: 100%;
+}
+.drop-content a {
+	float:center;
+	color: #fff;
+	padding: 22px, 10px;
+	text-decoration: none;
+	display: block;
+  margin-left: 00px;
+}
+.dropdown:hover .drop-content {
+	display: block;
+}
+.drop-content a:hover {
+	background-color: rgba(179, 167, 167, 0.5);
+}
+  
+
+	.navbar.responsive .drop-content {
+		position: center;
+		padding-left: 300px;
+		padding-right: 300px;
+		background-color: rgba(179, 167, 167, 0.5);
+	}
+	.navbar.responsive .drop-content a {
+		border-top: 1px solid #fff;
+	}
+	.navbar.responsive .dropdown .drop {
+		display: block;
+		width: 100%;
+		text-align: center;
+		border-top: 1px solid #fff;
+	}
+	.navbar.responsive .dropdown .drop:hover {
+		background-color: rgba(179, 167, 167, 0.5);
+	}

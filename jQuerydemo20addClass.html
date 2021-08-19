@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="jquery3.5.js"></script>
+     </script>
+    <style>
+    .divstyle
+        {
+        height:100px;
+        width:100px;
+        background-color:limegreen;
+        }
+        </style>
+    <script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("div").addClass("divstyle");
+            alert("INI");
+        });
+    });
+    </script>
+</head>
+<body>
+   <button>dynamicCSS</button>
+   <div>DIVISION</div>
+    
+</body>
+</html>
