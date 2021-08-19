@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="jquery3.5.js"></script>
+    <style>
+        #div1{
+            width: 100px;
+            height: 100px;
+            background-color: yellowgreen;
+            border-radius: 10px;
+            border-style:groove;
+            border-color: black;
+            }
+        #div2{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            border-radius: 10px;
+            border-style:groove;
+            border-color: black;
+        }
+    #div3{
+            width: 100px;
+            height: 100px;
+            background-color:lime;
+            border-radius: 10px;
+            border-style:groove;
+            border-color: black;
+        }
+        </style>
+        <script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("#div1").fadeToggle("slow");
+            $("#div2").fadeToggle(1500);
+            $("#div3").fadeToggle(4000);//3seconds
+        });
+    });
+    </script>
+</head>
+<body>
+   <button>CLICK!!</button>
+   <div id="div1">DIV 1</div>
+   <div id="div2">DIV 1</div>
+   <div id="div3">DIV 1</div>
+    
+</body>
+</html>

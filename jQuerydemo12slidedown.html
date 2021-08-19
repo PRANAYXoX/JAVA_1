@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="jquery3.5.js"></script>
+    <style>
+        div{
+            height:150px;
+            background-color: lime;
+            display: none;
+        }
+    </style>
+    <script>
+    $(document).ready(function(){
+        $("button").click(function(){
+                    //$("div").slideUp();
+             //$("div").slideDown(3000);  
+             $("div").slideDown("slow");  
+    });
+    });
+    </script>
+    
+</head>
+<body>
+   <div>DIV DEMO
+   <p>HELLO WORLD!!</p>
+   </div>
+   <button>CLICK!!</button>
+</body>
+</html>

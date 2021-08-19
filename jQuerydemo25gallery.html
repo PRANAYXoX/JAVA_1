@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="jquery3.5.js"></script>
+    <script>
+    $(document).ready(function(){
+       $(".gallery_img").click(function(){
+           var img_src=$(this).attr("src");
+           //alert(img_src); for trial
+           $("#show_img").attr("src", img_src);
+           $(".main").css("display","block");
+           $(".image").css("display","block");
+       }); 
+        $(".image").click(function(){
+           $(".main").css("display","none");
+           $(".image").css("display","none"); 
+        });
+    });
+    </script>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        .main{
+            height: 100%;
+            width: 100%;
+            background-color: black;
+            opacity: 0.3;
+            display:none;
+            position: absolute;
+        }
+        .image{
+            height: 500px;
+            width: 500px;
+            background-color: whitesmoke;
+            left: 30%;
+            top: 16%;
+            position: absolute;
+             display:none;
+        }
+        .gallery_img{
+            border-style: dotted;
+            color:darkorange;
+            box-shadow: 2px 2px 2px black;
+            cursor: grabbing;
+        }
+    </style>
+</head>
+<body>
+   <div class="main">main div</div>
+   <div class="image">
+       <img src="#" height="100%" width="100%" id="show_img">
+       
+   </div>
+    <img src="image/1.jpg" height="200" width="200" class="gallery_img">  <!--ID OF MULTIPLE IMAGES CANT BE SAME-->
+    <img src="image/2.jpg" height="200" width="200" class="gallery_img">
+    <img src="image/3.jpg" height="200" width="200" class="gallery_img">
+    <img src="image/4.jpg" height="200" width="200" class="gallery_img">
+</body>
+</html>
